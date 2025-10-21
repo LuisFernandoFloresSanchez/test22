@@ -1,0 +1,24 @@
+===========================================
+PERFIL DE ESTUDIANTE - GIT ESSENTIALS
+===========================================
+
+📅 Fecha de creación: 21/10/2025
+👤 Nombre: Test
+📚 Semestre: 1
+📖 Materia favorita: progra
+🍕 Comida favorita: tacos
+
+===========================================
+CURSO: Git Essentials
+👨‍🏫 INSTRUCTOR: Luis Flores
+⏱️ DURACIÓN: 3 horas
+===========================================
+
+📝 NOTAS PERSONALES:
+- Este archivo fue generado como parte de la actividad práctica
+- Recuerda hacer commit de este archivo a tu repositorio
+- ¡Disfruta aprendiendo Git! 🚀
+
+===========================================
+¡Gracias por participar en Git Essentials!
+===========================================

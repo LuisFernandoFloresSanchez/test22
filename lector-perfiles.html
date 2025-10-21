@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector de Perfiles - Git Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>📖 Lector de Perfiles de Estudiantes</h1>
+    
+    <div class="reader-section">
+        <h2>Carga tu archivo de perfil</h2>
+        <p>Selecciona o arrastra tu archivo .txt generado para visualizarlo:</p>
+        
+        <div class="file-upload-area" id="uploadArea">
+            <div class="upload-content">
+                <div class="upload-icon">📁</div>
+                <h3>Arrastra tu archivo .txt aquí</h3>
+                <p>o</p>
+                <input type="file" id="fileInput" accept=".txt" style="display: none;">
+                <button class="nav-button" onclick="document.getElementById('fileInput').click()">
+                    📂 Seleccionar archivo
+                </button>
+            </div>
+        </div>
+
+        <div id="profileViewer" class="profile-viewer" style="display: none;">
+            <div class="profile-header">
+                <h3 id="profileTitle">Perfil de Estudiante</h3>
+                <span id="fileName" class="file-name"></span>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-info">
+                    <div class="info-card">
+                        <h4>👤 Información Personal</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Nombre:</span>
+                                <span id="studentName" class="value">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Semestre:</span>
+                                <span id="studentSemester" class="value">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Materia favorita:</span>
+                                <span id="studentSubject" class="value">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Comida favorita:</span>
+                                <span id="studentFood" class="value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>📚 Información del Curso</h4>
+                        <div class="course-details">
+                            <p><strong>Curso:</strong> <span id="courseName">-</span></p>
+                            <p><strong>Instructor:</strong> <span id="instructor">-</span></p>
+                            <p><strong>Duración:</strong> <span id="duration">-</span></p>
+                            <p><strong>Fecha de creación:</strong> <span id="creationDate">-</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="raw-content">
+                    <h4>📄 Contenido original del archivo</h4>
+                    <pre id="rawFileContent"></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions-note">
+            <h3>💡 Instrucciones</h3>
+            <ol>
+                <li>Busca tu archivo .txt en la carpeta raíz de tu proyecto Git</li>
+                <li>Arrástralo a la zona de carga o usa el botón "Seleccionar archivo"</li>
+                <li>El sistema leerá y mostrará tu perfil automáticamente</li>
+            </ol>
+            <p><strong>Nota:</strong> Por seguridad, los navegadores no pueden acceder automáticamente a tus archivos locales. Esta es la forma más segura de visualizar tu perfil.</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button secondary" onclick="window.location.href='segunda-pagina.html'">
+            ← Volver a actividades
+        </button>
+        <button class="nav-button" onclick="window.location.href='index.html'">
+            🏠 Inicio
+        </button>
+    </div>
+
+    <script src="profile-reader.js"></script>
+</body>
+</html>
