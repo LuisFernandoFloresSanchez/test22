@@ -9,16 +9,25 @@
 <body>
     <h1>¡Bienvenido a la segunda página!</h1>
     <p>Esta es la segunda página de nuestro sitio web del curso de Git.</p>
-    <p>Aquí puedes agregar más contenido, como:</p>
-    <ul>
-        <li>Información adicional</li>
-        <li>Enlaces útiles</li>
-        <li>Formularios</li>
-        <li>Imágenes</li>
-    </ul>
+    <p>Aquí puedes encontrar más contenido sobre el curso:</p>
     
-    <button class="nav-button secondary" onclick="window.location.href='index.html'">
-        Volver al inicio
-    </button>
+    <div class="course-info">
+        <ul>
+            <li><a href="informacion-curso.html" style="color: #007bff; text-decoration: none;">📚 Información detallada del curso</a></li>
+            <li>🔗 Enlaces útiles y recursos</li>
+            <li>📝 Formularios de inscripción</li>
+            <li>🖼️ Galería de proyectos</li>
+            <li>💬 Testimonios de estudiantes</li>
+        </ul>
+    </div>
+    
+    <div class="navigation">
+        <button class="nav-button secondary" onclick="window.location.href='index.html'">
+            🏠 Volver al inicio
+        </button>
+        <button class="nav-button" onclick="window.location.href='informacion-curso.html'">
+            📚 Ver información del curso
+        </button>
+    </div>
 </body>
 </html>

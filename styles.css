@@ -3,31 +3,70 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
 h1 {
     color: #333;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #495057;
+    margin-top: 25px;
 }
 
 p {
     color: #666;
 }
 
+/* Estilos para la información del curso */
+.course-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.info-section {
+    margin: 25px 0;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background-color: #f8f9fa;
+    border-radius: 0 5px 5px 0;
+}
+
+.info-section h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
 /* Estilos para botones de navegación */
 .nav-button {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
+    margin: 10px 5px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .nav-button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .nav-button.secondary {
@@ -38,12 +77,42 @@ p {
     background-color: #1e7e34;
 }
 
+/* Navegación */
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
 /* Estilos para listas */
-ul {
-    margin: 20px 0;
+ul, ol {
+    margin: 15px 0;
+    padding-left: 25px;
 }
 
 li {
-    margin: 5px 0;
+    margin: 8px 0;
     color: #555;
+}
+
+ol li {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+    
+    .course-info {
+        padding: 20px;
+    }
+    
+    .nav-button {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+    }
 }
